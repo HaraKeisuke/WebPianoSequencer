@@ -4,7 +4,7 @@ import Scale, { ScaleName } from "../../models/Scale";
 
 const Octave = (props: IProp) => {
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", width: 500 }}>
+    <div style={{ display: "flex", flexWrap: "wrap", width: 600, minWidth: 400 }}>
       <Key scale={new Scale(ScaleName.C, props.tone)}>
         <Key scale={new Scale(ScaleName.Csharp, props.tone, true)} />
       </Key>

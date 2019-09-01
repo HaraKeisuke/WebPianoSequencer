@@ -27,7 +27,7 @@ const BaseKey = styled.div`
 `
 
 const WhiteKey = styled(BaseKey)`
-  width: ${500 / 7}px;
+  width: calc(100% / 7);
   height: 300px;
   box-sizing: border-box;
   border: 1px solid black;
@@ -35,10 +35,10 @@ const WhiteKey = styled(BaseKey)`
 `
 
 const BlackKey = styled(BaseKey)`
-  width: ${500 / 10}px;
+  width: calc(150% / 2);
   height: 200px;
   position: absolute;
   background-color: black;
-  left: ${500 / 11}px;
+  left: calc(125%/2);
   z-index: 1;
 `

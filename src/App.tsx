@@ -4,6 +4,7 @@ import './App.css';
 import logo from './logo.svg';
 import Octave from './component/piano/Octave';
 import AudioManager from './manager/AudioManager';
+import Styled from "styled-components";
 
 class App extends React.Component {
   constructor(props: any) {
@@ -18,13 +19,24 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <div style={{ display: "flex", flexWrap: "wrap" }}>
-          <Octave tone={4}/>
-          <Octave tone={5}/>
-        </div>
+        <Keyboard>
+          <Octave tone={3} />
+          <Octave tone={4} />
+          <Octave tone={5} />
+          <Octave tone={6} />
+        </Keyboard>
       </div>
     );
   }
 }
 
 export default App;
+
+
+const Keyboard = Styled.div`
+  display: flex;
+  flexWrap: wrap; 
+  height: 300px;
+  width: 100%;
+  overflow-x: auto;
+`
