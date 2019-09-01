@@ -4,29 +4,29 @@ import Scale, { ScaleName } from "../../models/Scale";
 
 const Octave = (props: IProp) => {
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", width: 600, minWidth: 400 }}>
-      <Key scale={new Scale(ScaleName.C, props.tone)}>
-        <Key scale={new Scale(ScaleName.Csharp, props.tone, true)} />
+    <div style={{ display: "flex", flexWrap: "wrap", width: 600, minWidth: 400, backgroundColor: "white" }}>
+      <Key scale={new Scale(ScaleName.C, props.octave)}>
+        <Key scale={new Scale(ScaleName.Csharp, props.octave)} />
       </Key>
-      <Key scale={new Scale(ScaleName.D, props.tone)} >
-        <Key scale={new Scale(ScaleName.Dsharp, props.tone, true)} />
+      <Key scale={new Scale(ScaleName.D, props.octave)} >
+        <Key scale={new Scale(ScaleName.Dsharp, props.octave)} />
       </Key>
-      <Key scale={new Scale(ScaleName.E, props.tone)} />
-      <Key scale={new Scale(ScaleName.F, props.tone)} >
-        <Key scale={new Scale(ScaleName.Fsharp, props.tone, true)} />
+      <Key scale={new Scale(ScaleName.E, props.octave)} />
+      <Key scale={new Scale(ScaleName.F, props.octave)} >
+        <Key scale={new Scale(ScaleName.Fsharp, props.octave)} />
       </Key>
-      <Key scale={new Scale(ScaleName.G, props.tone)}>
-        <Key scale={new Scale(ScaleName.Gsharp, props.tone, true)} />
+      <Key scale={new Scale(ScaleName.G, props.octave)}>
+        <Key scale={new Scale(ScaleName.Gsharp, props.octave)} />
       </Key>
-      <Key scale={new Scale(ScaleName.A, props.tone)} >
-        <Key scale={new Scale(ScaleName.Asharp, props.tone, true)} />
+      <Key scale={new Scale(ScaleName.A, props.octave)} >
+        <Key scale={new Scale(ScaleName.Asharp, props.octave)} />
       </Key>
-      <Key scale={new Scale(ScaleName.B, props.tone)} />
+      <Key scale={new Scale(ScaleName.B, props.octave)} />
     </div>
   )
 }
 export default Octave;
 
 interface IProp {
-  tone: number
+  octave: number
 }

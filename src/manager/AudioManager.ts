@@ -1,15 +1,12 @@
 import SoundFont from "soundfont-player";
 
 export default class AudioManager {
-  ctx: {
-    new(contextOptions?: AudioContextOptions | undefined): AudioContext;
-    prototype: AudioContext;
-  } = new _window.AudioContext();
+  ctx: AudioContext = new _window.AudioContext();
 
   private piano: any;
 
   load() {
-    SoundFont.instrument(this.ctx, 'acoustic_grand_piano').then((piano) => {
+    SoundFont.instrument(this.ctx as any, 'acoustic_grand_piano').then((piano) => {
       this.piano = piano as SoundFont.Player;
     });
   }

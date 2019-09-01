@@ -5,7 +5,10 @@
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-move": "6.0.0",
     "react-scripts": "3.1.1",
+    "rx": "4.1.0",
+    "rxjs": "6.5.2",
     "soundfont-player": "0.11.0",
     "styled-components": "4.3.2"
   },
@@ -16,10 +19,12 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "@tonejs/midi": "2.0.7",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.3",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
+    "@types/rx": "4.1.1",
     "@types/styled-components": "4.1.18",
     "typescript": "3.6.2"
   },
