@@ -9,7 +9,7 @@ class App extends React.Component {
   constructor(props: any) {
     super(props);
     AudioManager.getInstance().load();
-    MidiManager.getInstance().load("/menuett.mid", 2).then(() => {
+    MidiManager.getInstance().load("/WebPianoSequencer/menuett.mid", 2).then(() => {
       MidiManager.getInstance().play();
     });
   }
