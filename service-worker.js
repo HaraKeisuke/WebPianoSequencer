@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/WebPianoSequencer/precache-manifest.6c4c15fda759d1a955283f16d1e41dce.js"
+  "/WebPianoSequencer/precache-manifest.46960d183608e110807a59db9f8de72f.js"
 );
 
 self.addEventListener('message', (event) => {
